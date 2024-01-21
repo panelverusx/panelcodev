@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeV - Panel Aimbot</title>
+  <link rel="icon" href="img/pngegg.png" type="image/ico">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body onclick="PlayAudio()">
+
+<nav id="mainNav">
+  <a href="Home.html">Home</a>
+  <a href="Team.html">Team</a>
+  <a href="Developers.html">Proximamente</a>
+  <div class="submenu-container">
+    <a href="#" class="toggle-submenu">Productos</a>
+    <div class="submenu">
+      <a href="panel_premium.html">Panel Premium</a>
+      <a href="panel_aimbot.html">Panel Aimbot</a>
+      <a href="panel_movil.html">Panel Movil</a>
+      <a href="Bypass.html">Bypass</a>
+    </div>
+  </div>
+
+  <section class="sesion">
+    <div class="texto">
+      <h2>Panel Aimbot - CodeV</h2>
+      <p>Contamos con uno de los mejores bypass del mercado,<p>
+        <p>Mensual: 5 USD / 18 SOLES</p>
+        <p>Permanente: 10 USD / 37 SOLES</p>
+        <button class="boton" onclick="redirigir()">Comprar</button>
+    </div>
+    <div class="imagenes" id="imagenContainer">
+      <img src="img/Aimbot.png.jpg" alt="Copyright Walcox7">
+    </div>
+  </section>
+
+  <div id="copyright">
+    <p> Copyright &copy; 2024<span id="copyrightText"> By Walcox7</span></p>
+</div>
+
+  <div id="particles-js"></div>
+  
+  <div class="te">
+    <audio id="musica" loop>
+        <source src="music/Walcox7.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="scritp.js"></script>
+  <script>
+
+            function PlayAudio() {
+            document.getElementById("musica").play();
+        }
+
+        window.onload = function() {
+            document.getElementById("musica").play();
+        }
+
+        const audioElement = document.getElementById("musica");
+
+        audioElement.volume = 0.01;
+
+
+        function redirigir() {
+    window.open('https://discord.gg/YJHq6GEVcw', '_blank');
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var copyrightText = document.getElementById('copyrightText');
+
+    copyrightText.addEventListener('click', function () {
+        window.open('https://www.instagram.com/walcox7/', '_blank');
+    });
+});
+
+  }
+</script>
+</nav>
+
+</body>
+</html>
